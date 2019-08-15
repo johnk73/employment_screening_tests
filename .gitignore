@@ -1,4 +1,11 @@
 out/
+codeStyles/
+encodings.xml
+misc.xml
+project-template.xml
+Project_Default.xml
 uiDesigner.xml
 vcs.xml
 workspace.xml
+$PRODUCT_WORKSPACE_FILE$
+.idea/*.html

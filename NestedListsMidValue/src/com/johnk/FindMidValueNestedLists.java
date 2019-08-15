@@ -77,6 +77,7 @@ public class FindMidValueNestedLists {
     if (list1Tuples.size() == 0 || list2Tuples.size() == 0) {
       return solutionIDs;
     }
+    // sort = O(n*log(n))
     Collections.sort(list1Tuples);
     Collections.sort(list2Tuples);
 
@@ -87,6 +88,7 @@ public class FindMidValueNestedLists {
     List<List<listTuple>> solutions = new ArrayList<List<listTuple>>();
     for (listTuple listItem : list1Tuples) {
       // Search for value that will get us within maximum, when summed
+      // binarySearch = O(log(n))
       int list2DesiredValue = sumValueToFind - listItem.value;
       int list2SearchIndex = Collections.binarySearch(list2Tuples, new listTuple(list2DesiredValue));
       // Sum is maximum value -- switch modes
