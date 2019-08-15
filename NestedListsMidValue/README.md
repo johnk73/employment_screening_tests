@@ -11,8 +11,8 @@ In the test I took these were described as two different travel distances and ve
 
 
 Half the test for me was collection wrangling.  My solution under testing time pressure was incomplete but would have been O(n^2).  I got stuck trying to get this kind of thing to compile:  
-  public List<List<Integer>> blahblah() {  
-    ArrayList<ArrayList<Integer>> rtnvalue = new ArrayList<ArrayList<Integer>>();  
+  public List&lt;List&lt;Integer>> blahblah() {  
+    ArrayList&lt;ArrayList&lt;Integer>> rtnvalue = new ArrayList&lt;ArrayList&lt;Integer>>();  
 
 This works better.  Stay abstract until you are actually allocating (next to "new").  
-   List<List<Integer>> rtnvalue = new ArrayList<List<Integer>>();
+   List&lt;List&lt;Integer>> rtnvalue = new ArrayList&lt;List&lt;Integer>>();
